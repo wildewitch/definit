@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+        </style>
+    <style>
+        body {
+            padding: 1rem;
+            font-family: 'Quicksand', sans-serif;
+            width: 250px;
+            height: 100px;
+            color: #FF8847;
+            font-size: 80%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+        #logo {
+            width: 10rem;
+        }
+        #submit-btn {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            width: 2.7rem;
+            height: 2rem;
+            color: white;
+            background-color: #FF8847;
+            border-style: none;
+            border-radius: 25rem;
+            margin-left: -1.5rem;
+            transition-duration: 200ms;
+        }
+        #submit-btn:active {
+            transform: scale(.85);
+        }
+        #searchbar {
+            font-family: 'Quicksand', sans-serif;
+            margin-right: .25rem;
+            border-radius: 5rem;
+            border: solid 1px #FF8847;
+            padding: .25rem;
+            width: 12rem;
+        }
+        #searchbar:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="./img/definit-logo.png">
+    <h2>Need a definition?</h2>
+    <form class="form">
+        <input id="searchbar" placeholder=" What's the word?"></input><button id="submit-btn" type="submit" id="go">GO</button>
+    </form> 
+    <script src="popup_script.js"></script>
+</body>
+</html>
